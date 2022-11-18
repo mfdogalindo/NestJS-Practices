@@ -28,17 +28,16 @@ Con el desarrollo de la práctica se espera que el estudiante aprenda como:
 
 # Evaluación
 
-El estudiante deberá documentar sus resultados en un pequeño video sin edición donde muestre en ejecución las tareas.
-
-Los comandos ejecutados deberán estar comentados en un documento Markdown publicado en Github.
+El estudiante deberá documentar sus resultados en un pequeño documento en Markdown. El archivo será publicado por medio de un repositorio en Github donde registarán todos los resultados de esta y las siguientes prácticas.
 
 # Recursos
 
 * [Instalación de Docker en Ubuntu](https://docs.docker.com/engine/install/ubuntu/)
 * [Instalación de Docker en Debian](https://aprendiendoavirtualizar.com/instalar-docker-en-debian-11/)
 * [Instalación de Docker en Raspbian](https://www.simplilearn.com/tutorials/docker-tutorial/raspberry-pi-docker)
+* [Video explicativo sobre Docker](https://www.youtube.com/watch?v=9eTVZwMZJsA) (recomendado)
 * [Actualizar Python en Rasbian](https://raspberrytips.com/install-latest-python-raspberry-pi/)
-* [Conectar VSCode con SSH a RPi](https://cloudbytes.dev/snippets/develop-remotely-on-raspberry-pi-using-vscode-remote-ssh)
+* [Conectar VSCode con SSH a RPi](https://cloudbytes.dev/snippets/develop-remotely-on-raspberry-pi-using-vscode-remote-ssh) (opcional)
 * [Comando ss](https://phoenixnap.com/kb/ss-command)
 * [Comando nettstat](https://geekflare.com/es/netstat/)
 * [Comando lsof](https://geekflare.com/es/lsof-command-examples/)
@@ -46,6 +45,11 @@ Los comandos ejecutados deberán estar comentados en un documento Markdown publi
 * [Servidor Python UDP](https://rico-schmidt.name/pymotw-3/socket/udp.html)
 * [Sintaxis Markdown](https://markdown.es/sintaxis-markdown/)
 * [Markdown en VSCode](https://www.youtube.com/watch?v=pTCROLZLhDM)
+
+
+# Desarrollo
+
+Sigue el desarrollo de la práctica con el siguiente [video](https://drive.google.com/file/d/1yl5uZHS83F5UVLdD0pUzIRKmmETlocDk/view?usp=share_link)
 
 # Licencia
 

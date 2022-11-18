@@ -35,7 +35,8 @@ Acceso a internet para acceder al material y recursos necesarios.
    - [macOS x86](https://www.youtube.com/watch?v=E3HA3AD6UMg)
    - [macOS ARM](https://www.youtube.com/watch?v=hnwK-nkXolc)
 3. Crear una máquina virtual con Raspbian x86.
-   - [Virtual Box](https://www.youtube.com/watch?v=HwGhPqFO4ek)
+   - [Guia Raspbian](https://roboticsbackend.com/install-raspbian-desktop-on-a-virtual-machine-virtualbox/)
+   - [Video Virtual Box y Raspbian](https://www.youtube.com/watch?v=HwGhPqFO4ek)
    - Con UTM utilice la imagen de [Debian ARM](https://mac.getutm.app/gallery/debian-11-ldxe)
 
 
