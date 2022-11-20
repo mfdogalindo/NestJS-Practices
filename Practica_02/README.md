@@ -11,6 +11,11 @@ En esta práctica se completará la implementación de un servidor Web, es decir
 3. Publicar en GitHub el código fuente del servidor.
 4. Identificar los verbos Http y su uso para un caso de ejemplo.
 
+## Condiciones de entrega
+
+1. La práctica se entrega en un repositorio de GitHub.
+2. Haga un commit por cada uno de los objetivos implementados.
+3. Documente en markdown los resultados obtenidos y súbalo al respositorio donde ha realizado la práctica modificando el archivo `README.md`.
 ## Requisitos
 
 1. Requisitos de base.
@@ -52,7 +57,7 @@ En esta práctica se completará la implementación de un servidor Web, es decir
          sudo npm install -g n
          sudo n stable
 
-   A veces con debian las versiones disponibles de NodeJs no incluyen el gestor de paquetes *npm*. Si el comando npm no está disponible, instalarlo con:
+   A veces con debian las versiones disponibles de NodeJs no incluyen el gestor de paquetes `npm`. Si el comando npm no está disponible, instalarlo con:
 
          sudo apt install npm
 
@@ -115,7 +120,7 @@ La terminal preguntará si se desea usar yarn o npm, se recomienda usar npm.
 
          192.168.128.13 172.17.0.1
 
-4. Node utiliza el archivo *package.json* para definir los scripts que se ejecutan con el comando *npm run* o *yarn run*. Para ejecutar el ejemplo Hello World, se debe montar la carpeta y ejecutar el comando:
+4. Node utiliza el archivo `package.json` para definir los scripts que se ejecutan con el comando `npm run` o *yarn run*. Para ejecutar el ejemplo Hello World, se debe montar la carpeta y ejecutar el comando:
 
          cd practica_02
          npm run start:dev
@@ -124,7 +129,7 @@ La terminal preguntará si se desea usar yarn o npm, se recomienda usar npm.
 
          cat package.json
 
-   La terminal mostrará el contenido del archivo *package.json*. Que es una estructura de datos en formato JSON que contiene información sobre el proyecto, como el nombre, la versión, los autores, las dependencias, los scripts, etc.
+   La terminal mostrará el contenido del archivo `package.json`. Que es una estructura de datos en formato JSON que contiene información sobre el proyecto, como el nombre, la versión, los autores, las dependencias, los scripts, etc.
 
    ```json
    {
@@ -152,7 +157,7 @@ La terminal preguntará si se desea usar yarn o npm, se recomienda usar npm.
    ...
    ```
 
-   Para detener la ejecución del servidor, presione *Ctrl+C*.
+   Para detener la ejecución del servidor, presione `Ctrl + C`.
 
    Si la ejecución es correcta se observará la siguiente información en la terminal:
 
@@ -162,7 +167,7 @@ La terminal preguntará si se desea usar yarn o npm, se recomienda usar npm.
          [Nest] 1   - 2021-03-01 21:00:00   [RouterExplorer] Mapped {/, GET} route +1ms
          [Nest] 1   - 2021-03-01 21:00:00   [NestApplication] Nest application successfully started +1ms
 
-5. Con lo anterior el servidor nos indica que está listo para recibir peticiones con el metodo GET en la ruta raíz. Por defecto el servidor escucha en el puerto 3000, para verificar esto se puede ejecutar el comando en otra terminal:
+5. Con lo anterior el servidor nos indica que está listo para recibir peticiones con el metodo GET en la ruta raíz. Por defecto el servidor escucha en el puerto `3000`, para verificar esto se puede ejecutar el comando en otra terminal:
 
          netstat -tulpn | grep node
 
@@ -179,7 +184,7 @@ La terminal preguntará si se desea usar yarn o npm, se recomienda usar npm.
 
          Hello World!
 
-   Así mismo en un navegador web en la máquina host se puede ingresar a la dirección http://{{*direccion IP de la máquina virtual*}}:3000 y se mostrará la misma información.
+   Así mismo en un navegador web en la máquina host se puede ingresar a la dirección `http://{{*direccion IP de la máquina virtual*}}:3000` y se mostrará la misma información.
 
          http://192.168.128.13:3000
 
@@ -189,9 +194,9 @@ La terminal preguntará si se desea usar yarn o npm, se recomienda usar npm.
 #### III. Publicando el código en GitHub
 
 1. Para publicar el código en GitHub, se debe crear una cuenta en la página web de GitHub, si ya tiene una cuenta puede omitir este paso.
-2. Crear un repositorio en GitHub, para esto se debe ingresar a la página web de GitHub y seleccionar el botón *New* en la sección *Repositories*.
+2. Crear un repositorio en GitHub, para esto se debe ingresar a la página web de GitHub y seleccionar el botón `New` en la sección `Repositories`.
 
-3. En la página de creación de repositorio, se debe ingresar el nombre del repositorio, en este caso se usará el mismo nombre del proyecto, luego seleccionar la opción *Public* y finalmente seleccionar el botón *Create repository*.
+3. En la página de creación de repositorio, se debe ingresar el nombre del repositorio, en este caso se usará el mismo nombre del proyecto, luego seleccionar la opción `Public` y finalmente seleccionar el botón `Create repository`.
 4. En la máquina virtual, se debe ingresar a la carpeta del proyecto y ejecutar los siguientes comandos:
 
    Montar carpeta del proyecto:
@@ -257,7 +262,7 @@ Para facilitar el desarrollo de la práctica se recomienda emplear Remote SSH en
 
          /home/<User>/Documents/Servidores/practica_02/
 3. Ingrese contraseña del usuario de la máquina virtual.
-4. Si ha conectado correctamente, en el explorador de VSCode, seleccione el archivo *app.controller.ts* que se encuentra en la carpeta *src*.
+4. Si ha conectado correctamente, en el explorador de VSCode, seleccione el archivo `app.controller.ts` que se encuentra en la carpeta `src`.
 5. Dentro del archivo encontrará una función precedida de la anotación @Get()
 
    ```typescript
@@ -301,7 +306,7 @@ Para facilitar el desarrollo de la práctica se recomienda emplear Remote SSH en
       }
       ```
 
-   Después se creará un método para modificar el mensaje adicional, y este método será invocado como un POST utilizando la ruta como entrada del parámetro *nombre*, entonces *app.controller.ts* quedará de la siguiente manera:
+   Después se creará un método para modificar el mensaje adicional, y este método será invocado como un POST utilizando la ruta como entrada del parámetro `nombre`, entonces `app.controller.ts` quedará de la siguiente manera:
 
       ```typescript
       import { Controller, Get, Param, Post } from '@nestjs/common';
@@ -356,7 +361,7 @@ Para facilitar el desarrollo de la práctica se recomienda emplear Remote SSH en
       ```
 
 
-8. Experimente con las anotaciones @Put(), @Delete() y @Patch(). Recuerde que estas anotaciones deben ser importadas desde el paquete @nestjs/common. Aunque usualmente VSCode le asistirá con la importación, si no lo hace, puede hacerlo manualmente.
+8. Seleccione un tema que considere que es posible modelar como una entidad en base de datos, por ejemplo personas, animales, productos, etc. Experimente con las anotaciones @Put(), @Delete() y @Patch(). Recuerde que estas anotaciones deben ser importadas desde el paquete @nestjs/common. Aunque usualmente VSCode le asistirá con la importación, si no lo hace, puede hacerlo manualmente.
    
    Con las otras anotaciones se espera que el estudiante pueda comprender el funcionamiento de los verbos HTTP. Recordando los siguientes criterios:
 
@@ -365,7 +370,7 @@ Para facilitar el desarrollo de la práctica se recomienda emplear Remote SSH en
    * @Delete() - Elimina un recurso.
    * @Patch() - Actualiza un recurso parcialmente.
 
-   Entonces, para cada una de las anotaciones utilice los verbos para crear, modificar, eliminar y actualizar un mensaje de saludo contenido en la variable que se ha creado.
+   Entonces, para cada una de las anotaciones utilice los verbos para crear, modificar, eliminar y actualizar, es decir un CRUD para modificar una entidad. Si tiene dudas de cómo hacerlo siga este [ejemplo sobre personas](https://github.com/mfdogalindo/UC_Practicas_IoT_Servidor/blob/Ejemplo-Práctica-2/src/app.controller.ts).
 
 
    Si desea profundizar más en el tema, puede consultar la documentación oficial de NestJS en el siguiente enlace: https://docs.nestjs.com/controllers
@@ -376,7 +381,7 @@ Para facilitar el desarrollo de la práctica se recomienda emplear Remote SSH en
 
    Como herramienta para evaluar el funcionamiento de los verbos  emplear [Postman](https://www.youtube.com/watch?v=qsejysrhJiU) o [Insomnia](https://www.youtube.com/watch?v=DkK4jOw7YLU) le resultará útil. 
 
-9.  En el archivo *README.md* del repositorio, agregue la siguiente información:
+9.  En el archivo `README.md` del repositorio, agregue la siguiente información:
 
        * Nombre completo
        * Nombre de la asignatura
@@ -384,7 +389,7 @@ Para facilitar el desarrollo de la práctica se recomienda emplear Remote SSH en
 
       Explicación de los pasos realizados en el numeral 8 (Implementación de los verbos HTTP).
 
-11. Haga commit y push a GitHub invocando en la terminal de la maquina virtual los siguientes comandos:
+10. Haga commit y push a GitHub invocando en la terminal de la maquina virtual los siguientes comandos:
 
       ```bash
       cd ~Documents/Servidores/practica_02
@@ -395,6 +400,8 @@ Para facilitar el desarrollo de la práctica se recomienda emplear Remote SSH en
    
 
 # Licencia
+
+Esta guía se redactado con la asistencia de GitHub Copilot 🤖.
 
 Este material está bajo licencia [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).
 
