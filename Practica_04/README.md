@@ -26,7 +26,7 @@ Mismos requisitos de práctica 2.
 
 ### 1. Desplegar una aplicación en la nube
 
-Inicialmente esta práctica se realizó utilizando el servicio de hosting gratuito de [Heroku](https://www.heroku.com/). Sin embargo, este servicio ha cambiado su política de uso y ahora requiere una tarjeta de crédito para poder utilizarlo. Por ello, se ha optado por utilizar el servicio de hosting gratuito de [PythonAnywhere](https://www.pythonanywhere.com/).
+Inicialmente esta práctica se realizó utilizando el servicio de hosting gratuito de [Heroku](https://www.heroku.com/). Sin embargo, este servicio ha cambiado su política de uso y ahora requiere una tarjeta de crédito para poder utilizarlo. Por ello, se ha optado por utilizar el servicio de hosting gratuito de [Deta](https://www.deta.sh/).
 
 1. Descargar deta ejecutando en la terminal:
       
