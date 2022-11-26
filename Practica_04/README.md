@@ -315,10 +315,10 @@ Para conectar una base de datos emplearemos la librería TypeORM. Este es un ORM
 
 14. Actualice el proyecto en la nube:
 
-   ```bash
-   git add .
-   git commit -m "Conexión con MongoDB"
-   git push heroku master
+      ```bash
+      git add .
+      git commit -m "Conexión con MongoDB"
+      git push heroku master
 
 15. Esta implementación no funcionará con DETA, debido a restricciones de la capa gratuita de la plataforma. Para poder utilizar la base de datos, se debe adquirir una cuenta de pago, alternativamente puede solicitar créditos en AWS para desplegar sin restricciones.
 
