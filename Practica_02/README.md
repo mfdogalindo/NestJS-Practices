@@ -78,15 +78,15 @@ En esta práctica se completará la implementación de un servidor Web, es decir
          cd
          mkdir ~/.npm-global
          npm config set prefix '~/.npm-global'
-         echo "export PATH=~/.npm-global/bin:$PATH" >> ~/.profile
-         source ~/.profile
+         echo "export PATH=~/.npm-global/bin:$PATH" >> ~/.bashrc
+         source ~/.bashrc
 
    Nota: Si emplea zsh como shell, en lugar de ~/.profile, emplee ~/.zshrc
 
 5. Finalmente, para instalar NestJS se deben ejecutar los comandos:
 
          npm i -g @nestjs/cli
-         source ~/.profile
+         source ~/.bashrc
 
 #### II. Ejecutando el ejemplo Hello World
 
@@ -203,13 +203,15 @@ La terminal preguntará si se desea usar yarn o npm, se recomienda usar npm.
 
          cd ~/Documents/Servidores/practica_02
 
-   Inicializar repositorio:
+   Configure la llave SSH para evitar ingresar la contraseña cada vez que se ejecuta el comando. Para configurar la autenticación SSH siga [este tutorial](https://medium.com/humantodev/configurar-ssh-github-enwindows-10-linux-y-macos-e843eb6d104e).
+
+   Luego, inicializar repositorio con el url SSH del repositorio creado en GitHub:
 
          git remote add origin <url_del_repositorio>
 
    Por ejemplo:      
          
-         git remote add origin https://github.com/mfdogalindo/UC_Practicas_IoT_Servidor.git
+         git remote add origin git@github.com:mfdogalindo/UC_Practicas_IoT_Servidor.git
 
    Configurar usuario de Git:
 
@@ -221,19 +223,8 @@ La terminal preguntará si se desea usar yarn o npm, se recomienda usar npm.
          git add .
          git commit -m "Primer commit"
          git push --set-upstream origin master
-   
-   Luego se debe ingresar el usuario y contraseña de GitHub para finalizar la publicación del código. Si tiene configurada autenticación de doble factor y para evitar ingresar la contraseña cada vez que se ejecuta el comando, se puede generar un token de acceso personal en la página web de GitHub y usarlo en lugar de la contraseña. Alternativamente se puede configurar la autenticación SSH para evitar ingresar la contraseña cada vez que se ejecuta el comando. Para configurar la autenticación SSH siga [este tutorial](https://medium.com/humantodev/configurar-ssh-github-enwindows-10-linux-y-macos-e843eb6d104e).
-
-   Despues de configurar la llave SSH, se debe ejecutar el comando:
-
-         git remote remove origin
-         git remote add origin <dirección SSH del repositorio>
-         
-   Por ejemplo:
-
-         git remote add origin git@github.com:mfdogalindo/UC_Practicas_IoT_Servidor.git
-
-   Finalmente al ejecutar el comando:
+            
+   Finalmente al ejecutar el comando para sincronizar con GitHub:
 
          git push --set-upstream origin master
 
