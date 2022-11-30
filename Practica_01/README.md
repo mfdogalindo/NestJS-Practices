@@ -14,6 +14,12 @@ Con el desarrollo de la práctica se espera que el estudiante aprenda como:
 2. Identificar en Linux mecanismos para la identificación de ocupación de puertos y a qué servicio está relacionado
 3. Implementar un pequeño servicio cliente/servidor en Python empleando TCP y UDP, a partir de ello establezca cual es más adecuado para algunos contextos que le serán planteados.
 
+## Condiciones de entrega
+
+1. La práctica se entrega en un repositorio de GitHub.
+2. Haga un commit por cada uno de los objetivos implementados.
+3. Documente en markdown los resultados obtenidos y súbalo al respositorio donde ha realizado la práctica modificando el archivo `README.md`.
+
 ## Requisitos
 
 1. Requerimientos de base

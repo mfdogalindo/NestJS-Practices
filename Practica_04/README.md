@@ -86,12 +86,12 @@ Inicialmente esta práctica se realizó utilizando el servicio de hosting gratui
 6. Antes de publicar debemos compilar el proyecto. Para ello ejecutamos en la terminal:
 
          cd ~/Documents/Servidores/practica_02
-         npm run build
+         nest build
 
 7. Publicar la aplicación ejecutando en la terminal:
 
-         cd ..
-         deta new --node .
+         
+         deta new --node 
          
 
    Si todo es correcto en la terminal tendrá la siguiente salida:
